@@ -59,4 +59,6 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 - 点击settings-pages-static html Configure-Start commit, 可以看到会生成static.yml文件
 - 点击Actions，可以看到一条操作记录 Create static.yml, 点击进去 deploy是部署过程，下面的链接就是访问地址了，但这个地址是404，因为默认是访问项目的index.html，但我们需要让它访问dist
 - git pull ,把 static.yml拉到本地, 将jobs-deploy-steps-name: Upload artifact width 中 [path: '.'] 改成 [path: './dist']
+- 再次点击deploy 下链接，页面可以访问了，但是样式没有出来, 因为css路径没有项目名
+- 给astro.config.mjs defineConfig加上 base: "teach-astro",
 
