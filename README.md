@@ -53,5 +53,10 @@ Feel free to check [our documentation](https://docs.astro.build) or jump into ou
 ## 集成tailwind：pnpx astro add tailwind, 
 会自动将配置写入astro.config.mjs，生成tailwind.config.cjs
 # github上创建项目
-- Your repositories- new
+- Your repositories- new一个代码库
+- 上传代码，先clone git地址，然后add、commit
+- 没有看到dist文件，修改gitignore之后再上传
+- 点击settings-pages-static html Configure-Start commit, 可以看到会生成static.yml文件
+- 点击Actions，可以看到一条操作记录 Create static.yml, 点击进去 deploy是部署过程，下面的链接就是访问地址了，但这个地址是404，因为默认是访问项目的index.html，但我们需要让它访问dist
+- git pull ,把 static.yml拉到本地, 将jobs-deploy-steps-name: Upload artifact width 中 [path: '.'] 改成 [path: './dist']
 
